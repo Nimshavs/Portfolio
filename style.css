@@ -1,7 +1,7 @@
 .{
     margin: 0; padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins","sans-serif";
+    font-family: "Poppins","sans-serif"; 
 }
 body{
     background-color:rgb(130, 106, 251);
@@ -12,7 +12,7 @@ body{
 }
 .container{
     height: 1100px;
-    position: relative; max-width: 800px; width: 100%;
+    position: relative; max-width: 800px; width: 80%;
     background: #fff; padding: 25px;
     border-radius: 5px; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 1);
@@ -20,6 +20,7 @@ body{
 .container header{
     font-size: 1.5rem; color: #333;
     font-weight: 500; text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Times New Roman';
 }
 .container .form{
     margin-top: 30px;
@@ -65,7 +66,33 @@ body{
     outline: none; border: none; color: #707070;
     font-size: 1rem;
 }
+.input-box input[type="reset"] {
+    background-color: rgb(89, 82, 231);
+    color: white; text-align: center;
+}
 
+.input-box input[type="submit"] {
+    background-color: rgb(89, 82, 231);
+    color: white; text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+}
 /* Resposive */
 @media screen and (max-width: 500px) {
     .form .column {
@@ -73,13 +100,3 @@ body{
     }
 }
 
-/*
-label{
-    text-align: right ;
-}
-input{
-    text-align: left;
-}
-h1{
-    text-align: center;color: black;
-}*/
