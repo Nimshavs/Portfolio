@@ -1,3 +1,85 @@
-body{
-    background-color: aquamarine;
+.{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","sans-serif";
 }
+body{
+    background-color:rgb(130, 106, 251);
+    min-height: 100vh;
+    display: flex; align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+.container{
+    height: 1100px;
+    position: relative; max-width: 800px; width: 100%;
+    background: #fff; padding: 25px;
+    border-radius: 5px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+.container header{
+    font-size: 1.5rem; color: #333;
+    font-weight: 500; text-align: center;
+}
+.container .form{
+    margin-top: 30px;
+}
+.form .input-box{
+    width: 80%; margin-top: 20px;
+}
+.input-box label{
+    color: #333;
+}
+.form :where(.input-box input, .select-box){
+    position: relative; height: 50px; width: 100%;
+    outline: none; border: 1px solid #ddd;
+    font-size: 1rem; color: #707070;
+    margin-top: 8px; padding: 0 15px;
+    border-radius: 6px;
+}
+.form .column{
+    display: flex; column-gap: 70px;
+}
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #080707; font-size: 1rem; font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center; column-gap: 50px;
+}
+.form .gender{
+    column-gap: 5px; cursor: pointer;
+}
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+.address :where(input ,.select-box ){
+    margin-top: 15px;
+}
+.select-box select{
+    height: 100%; width: 100%;
+    outline: none; border: none; color: #707070;
+    font-size: 1rem;
+}
+
+/* Resposive */
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+}
+
+/*
+label{
+    text-align: right ;
+}
+input{
+    text-align: left;
+}
+h1{
+    text-align: center;color: black;
+}*/
