@@ -11,7 +11,7 @@ body{
     justify-content: center;
 }
 .container{
-    height: 1100px;
+    height: 1200px;
     position: relative; max-width: 800px; width: 80%;
     background: #fff; padding: 25px;
     border-radius: 5px; 
@@ -85,13 +85,15 @@ label {
     font-weight: bold;
 }
 
-input[type="file"] {
+input[type="reset"] {
     display: block;
-    margin-top: 5px;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
-button[type="submit"] {
-    margin-top: 10px;
+input[type="submit"] {
+    margin-top: 50px;
+    margin-left: 100px;
 }
 /* Resposive */
 @media screen and (max-width: 500px) {
