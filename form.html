@@ -12,11 +12,21 @@
         <form action="https://script.google.com/macros/s/AKfycbzrkokvg81HMra7w5otsY_RyTQHOvWId96c3oAU32MwDQgF6Y6eaat9shKqNBKJui-r/exec" 
             method="POST" enctype="multipart/form-data" class="form" >
         
-
-            <div class="form-group">
-                <label for="photo">Passport Size Photo:</label>
-                <input type="file" id="photo" name="photo" accept="image/*">
+            <div>
+                <img id="img" src="choose.png" >
             </div>
+
+            <input id="input" type="file">
+
+            <script>
+                let img = document.getElementById('img');
+                let input = document.getElementById('input');
+
+                input.onchange = (e) => {
+                    if(input.files[0])
+                        img.src = URL.createObjectURL(input.files[0]);
+                }
+            </script>
 
             <div class="input-box">
                 <label for="fname">First name:</label><br>
@@ -102,6 +112,7 @@
             </div>
         </div>        
       </form>
+      <div id="preview"></div>
     </section>
 </body>
 </html>
