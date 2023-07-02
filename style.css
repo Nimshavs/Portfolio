@@ -9,6 +9,7 @@ body{
     display: flex; align-items: center;
     padding: 20px;
     justify-content: center;
+    position: static;
 }
 .container{
     height: 1350px;
@@ -18,24 +19,28 @@ body{
     box-shadow: 0 0 15px rgba(0, 0, 0, 1);
 }
 .container header{
+    margin-top: 25px;
     font-size: 1.5rem; color: #333;
     font-weight: 500; text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', 'Times New Roman';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .container .form{
-    margin-top: 30px;
+    position: relative;
+
 }
 .form .input-box{
     width: 65%; margin-top: 20px;
+    top: 10px;
 }
 .input-box label{
     color: #333;
+    top: 10px;
 }
 .form :where(.input-box input, .select-box){
     position: relative; height: 50px; width: 100%;
     outline: none; border: 1px solid #ddd;
     font-size: 1rem; color: #707070;
-    margin-top: 8px; padding: 0 15px;
+    margin-top: 8px; 
     border-radius: 6px;
 }
 .form .column{
@@ -62,7 +67,7 @@ body{
     margin-top: 15px;
 }
 .select-box select{
-    height: 100%; width: 100%;
+    height: 100%; width: 110%;
     outline: none; border: none; color: #707070;
     font-size: 1rem;
 }
@@ -88,16 +93,26 @@ label {
 input[type="reset"] {
     display: block;
     margin-top: 25px;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 input[type="submit"] {
     margin-top: 25px;
-    margin-left: 100px;
+    margin-left: 200px;
+}
+.frame {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ccc;
+    background: #eee;
+    margin-left: 600px;
+    margin-top: 20px;
+    padding: 15px 10px;
 }
 img{
-    height: 200px;
-    margin-left: 600px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
 }
 .form input[type="file"]{
     margin-left: 600px;
