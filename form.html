@@ -10,14 +10,15 @@
     <section class="container">
         <header>REGISTRATION FORM</header>
         <form action="https://script.google.com/macros/s/AKfycbzrkokvg81HMra7w5otsY_RyTQHOvWId96c3oAU32MwDQgF6Y6eaat9shKqNBKJui-r/exec" 
-            method="POST" enctype="multipart/form-data" class="form" >
-        
+            method="POST" enctype="multipart/form-data" class="form" id="form">
+
+            <div class="wrapper">
             <div class="frame">
                 <img id="img" src="choose.png" >
             </div>
 
             <input id="input" type="file">
-
+            </div>
             <script>
                 let img = document.getElementById('img');
                 let input = document.getElementById('input');
@@ -51,11 +52,11 @@
             <h3>Gender</h3>
             <div class="gender-option">
                 <div class="gender"> 
-                    <input type="radio" id="check-male" name="gender"/>  
+                    <input type="radio" id="check-male" name="gender" value="male"/>  
                     <label for="check-male">Male</label> 
-                    <input type="radio" id="check-female" name="gender"/>  
+                    <input type="radio" id="check-female" name="gender" value="female"/>  
                     <label for="check-female">Female</label> 
-                    <input type="radio" id="check-other" name="gender"/>
+                    <input type="radio" id="check-other" name="gender" value="other"/>
                     <label for="check-other">Other</label>  
                 </div>
             </div>
@@ -67,7 +68,7 @@
             <label>Select Country</label>
             <div class="column">
                 <div class="select-box">
-                    <select>
+                    <select name="Country">
                         <option>Country</option>
                         <option>America</option>
                         <option>Japan</option>
@@ -90,7 +91,7 @@
             <label>Select Course</label>
             <div class="column">
                 <div class="select-box">  
-                    <select>
+                    <select name="Course">
                         <option value="Course">Course</option>  
                         <option value="BCA">BCA</option>  
                         <option value="BBA">BBA</option>  
