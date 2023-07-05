@@ -33,9 +33,10 @@ body{
 .form .input-box{
     width: 65%; 
     top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .input-box label{
-    color: #333;
+    color: #090808;
     top: 10px;
 }
 .form :where(.input-box input, .select-box){
@@ -61,6 +62,8 @@ body{
 }
 .form .gender{
     column-gap: 5px; cursor: pointer;
+    font-size: bold;
+
 }
 .form :where(.gender input, .gender label){
     cursor: pointer;
