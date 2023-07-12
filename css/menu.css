@@ -27,4 +27,23 @@
   height: 100vh;
   background: linear-gradient(-90deg,#031540 65%,#fff 35%);
   display: flex; align-items: center;
+  padding: 0 10%;
+}
+.home-image{
+  width: 400px; height: 400px; background: seagreen;
+}
+.home-content{
+  max-width: 600px; color: #fff;
+  text-align: right;
+}
+.home-content h1{
+  font-size: 55px; line-height: 1.2;
+}
+.home-sci a{
+  display: inline-block; 
+  justify-content: center; align-items: center;
+  width: 25px; height: 25px;
+  background: transparent; border: 2px solid #fff;
+  border-radius: 50%; font-size: 20px; 
+  color: #00abf0; text-decoration: none;
 }
