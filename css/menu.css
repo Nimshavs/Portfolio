@@ -4,46 +4,67 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
-.header{
-    position: fixed; top: 0; left: 0; 
-    width: 100%; padding: 20px 10%; background: transparent;
+body{
+  background-color: #1f242d; font-family: "Poppins",sans-serif;
+  color: white;
+}
+.header{ 
+    padding: 25px 10%; background: transparent;
     display:flex; justify-content: space-between; 
 }
 .logo{
-  font-size: 25px; color: #031540; text-decoration: none;
-  font-weight: 700;
+  font-size: 27px; color: #fff; text-decoration: none;
+  font-weight: 600; cursor: default;
 }
 .navbar a {
-  font-size: 18px; color: #fff; text-decoration: none;
-  font-weight: 500; margin-left: 35px;
-  transition: .3s;
+  color: #fff; text-decoration: none;
+  font-weight: 600;
+  padding: 0px 10px;
+  transition: 0.3s all;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: #00abf0;
+    color: #0ef;
 }
-.home{
-  height: 100vh;
-  background: linear-gradient(-90deg,#031540 65%,#fff 35%);
-  display: flex; align-items: center;
-  padding: 0 10%;
+.hero-container{
+  display: flex; 
+  padding: 25px 10%;
+  justify-content: center;
+  align-items: center;
 }
-.home-image{
-  width: 400px; height: 400px; background: seagreen;
+.info-side h3{
+  font-size: 25px;
+  font-weight: 500; margin: 50px 0;
+  letter-spacing: 1px;
 }
-.home-content{
-  max-width: 600px; color: #fff;
-  text-align: right;
+.info-side h1{
+  font-size: 45px; letter-spacing: 1px;
+  font-weight: 700;
 }
-.home-content h1{
-  font-size: 55px; line-height: 1.2;
+.hero-img{
+  right: 100px;
 }
-.home-sci a{
-  display: inline-block; 
-  justify-content: center; align-items: center;
-  width: 25px; height: 25px;
-  background: transparent; border: 2px solid #fff;
-  border-radius: 50%; font-size: 20px; 
-  color: #00abf0; text-decoration: none;
+.hero-img img{
+  width: 300px;
+}
+i{
+  position: relative; border: 2px solid #0ef;
+  padding: 10px; border-radius: 50%;
+  color: #0ef; margin: 0px 8px; 
+  transition: 0.3ms;
+}
+i:hover{
+  box-shadow: 0 0 20px #0ef;
+}
+
+button{
+  background-color: #0ef; margin: 30px;
+  padding: 20px 70px; border: none;
+  border-radius: 25px; cursor: pointer;
+  font-weight: 700; transition: .3s;
+  box-shadow: 0 0 15px #0ef;
+}
+button :hover{
+  box-shadow: none;
 }
