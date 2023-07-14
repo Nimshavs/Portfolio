@@ -14,6 +14,7 @@ body{
 }
 .logo{
   font-size: 27px; color: #fff; text-decoration: none;
+  margin-left: 5%;
   font-weight: 600; cursor: default;
 }
 .navbar a {
@@ -33,38 +34,87 @@ body{
   justify-content: center;
   align-items: center;
 }
+.info-side{
+  padding: 5%;
+  margin-left: 10%;
+}
 .info-side h3{
-  font-size: 25px;
-  font-weight: 500; margin: 50px 0;
+  font-size: 32px;
+  font-weight: 700; margin: 10px 0;
   letter-spacing: 1px;
 }
 .info-side h1{
-  font-size: 45px; letter-spacing: 1px;
+  font-size: 45px; 
+  font-weight: 700;
+  margin: -3px 0;
+}
+.info-side h2 span{
+  color: #0ef;
+  font-size: 30px;
   font-weight: 700;
 }
-.hero-img{
+image{
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
   right: 100px;
 }
-.hero-img img{
-  width: 300px;
+.image img{
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  bottom: 0;
+  transform: translateX(-50%);
 }
-i{
-  position: relative; border: 2px solid #0ef;
-  padding: 10px; border-radius: 50%;
-  color: #0ef; margin: 0px 8px; 
-  transition: 0.3ms;
+.home-sci a{
+  display: inline-flex; justify-content: center;
+  align-items: center; width: 46px; height: 40px;
+  background: transparent; 
+  border: 2px solid #0ef; border-radius: 50%; 
+  font-size: 20px; color: #0ef; 
+  text-decoration: none; 
+  margin: 30px 15px 30px 0;
 }
-i:hover{
+.home-sci a:hover{
+  background: #0ef;
+  color: #081b29;
   box-shadow: 0 0 20px #0ef;
 }
-
-button{
-  background-color: #0ef; margin: 30px;
-  padding: 20px 70px; border: none;
-  border-radius: 25px; cursor: pointer;
-  font-weight: 700; transition: .3s;
-  box-shadow: 0 0 15px #0ef;
+.btn-box{
+  display: inline-block;
+  background: #0ef; 
+  font-size: 16px;
+  color: #081b29;
+  letter-spacing: 1px;
+  padding: 15px 28px; border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600; 
+  
 }
-button :hover{
-  box-shadow: none;
+.btn-box:hover{
+  box-shadow: 0 0 5px cyan,0 0 25px cyan,
+  0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
 }
+.image1{
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+}
+.image1 img{
+  height: 60%;
+  position: absolute;
+  top: 50px;
+  left: 40%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.section h1{
+  margin: 50%;
+}
+.section h1 span{
+  margin: 50%;
+}
+/*window property remove background*/
