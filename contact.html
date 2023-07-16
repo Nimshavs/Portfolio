@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact me</title>
-<style>
-
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="./css/menu.css">
 </head>
 <link rel="stylesheet" href="./css/menu.css">
 <body>
     
 <ul class="menu">
-  <li><a href="./index.html">Home</a></li>
-  <li><a href="./about.html">About</a></li>
-  <li><a class="active" >Contact</a></li>
-  
-</ul>
-<h1>Contact me page</h1>
+  <header class="header">
+    <a href="#" class="logo">Portfolio </a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span></h2>
+
+  <form action="mailto:nimshashajahan@gmail.com">
+  <div class="input-box">
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+  </div>
+  <div class="input-box">
+    <input type="number" placeholder="Mobile Number">
+    <input type="text" placeholder="Email Subject">
+  </div>
+  <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+  <input type="submit" value="Send Message" class="btn-box">
+</form>
+</section>
 </body>
 </html>

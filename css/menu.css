@@ -113,58 +113,57 @@ image{
 .about-img img{
   margin-top: 5%;
   padding: 10%;
-  width: 35vw;
+  width: 40vw;
 }
 .heading{
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3rem;
   top: 20%;
 }
 .about-content h1{
   text-align: center;
   color: #0ef;
   line-height: 1.2;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 .about-content h2{
   margin-top: 5%;
   font-size: 2rem;
+
 }
 .about-content p{
   font-size: 1.1rem;
   font-weight: 50%;
-  margin: 2rem 0 3rem;
-  text-align:initial;
+  margin: 3rem 0 2rem;
 }
-/*.about-text h1 span{
+.contact h2{
+  margin-bottom: 3rem;
   color: #0ef;
-  margin: 15px 0 30px;
-  margin-right: 50%;
 }
-.about-text h2{
-  font-size: 29px;
-  font-weight: 600;
-  color: #fff;
-  line-height: 1.7;
-  margin: 15px 0 30px;
-  padding: 20%;
+.contact form {
+  max-width: 50rem;
+  margin: 1rem auto;  text-align: center;
+  margin-bottom: 3rem;
 }
-.about-text p{
-  color: aliceblue;
-  font-size: 20px;
-  font-weight: 500px;
-  line-height: 1.4;
-  margin-bottom: 4rem;
-  margin: 15px 0 ;
+.contact form .input-box{
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 1rem;
 }
-
-/*window property remove background
-.image1 img{
-  height: 50%;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  bottom: 0;
-  transform: translateX(-50%);
+.contact form .input-box input,
+.contact form textarea{
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--secong-bg-color);
+  border-radius: 1rem;
+  margin: .7rem;
 }
-*/
+.contact form .input-box input{
+  width: 49%;
+}
+.contact form textarea{
+  resize: none;
+}
