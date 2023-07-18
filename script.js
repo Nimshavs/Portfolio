@@ -15,7 +15,6 @@ contactForm.addEventListener("submit", function (e) {
     Full Name: ${fullName}
     Email Address: ${emailAddress}
     Mobile Number: ${mobileNumber}
-    Email Subject: ${emailSubject}
     
     Message:
     ${message}
